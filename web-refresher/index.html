@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="A small refresher page built with HTML5, CSS and JavaScript for Web Development II.">
+  <title>Irinel Talica | Web Refresher</title>
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/script.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to main content</a>
+
+  <header class="site-header">
+    <p class="site-name">Irinel Talica</p>
+    <nav aria-label="Main navigation">
+      <ul class="nav-list">
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#goals">Goals</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+    <button id="theme-toggle" class="button button-outline" type="button" aria-pressed="false">
+      Switch to dark mode
+    </button>
+  </header>
+
+  <main id="main">
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="hero-text">
+        <h1 id="hero-title">Hello, my name is Irinel Talica. I am continuing to work on web development.</h1>
+        <p>
+          This website is created as a reminder of Web Development II. The site is made using HTML5, CSS, and JavaScript
+          to ensure that my knowledge of Web Development I is still there before proceeding to React.
+        </p>
+        <a class="button" href="#contact">Get in touch</a>
+      </div>
+      <img class="hero-image" src="assets/laptop.svg" alt="Simple illustration of a laptop showing coloured lines of code" width="480" height="320">
+    </section>
+
+    <section id="about" class="section" aria-labelledby="about-title">
+      <h2 id="about-title">About me</h2>
+      <p>
+        I am a student at Level 5, taking the course Web Development II. 
+        Last year, I gained skills in creating pages using HTML, styling them using CSS,
+        and adding behaviors through JavaScript. Now, I seek to make my knowledge more dependable so that I can take on building larger projects.
+      </p>
+      <p>
+        I like pages that are easy to read, work on a phone and do what they say they do.
+        This one is small on purpose.
+      </p>
+    </section>
+
+    <section id="skills" class="section" aria-labelledby="skills-title">
+      <h2 id="skills-title">Skills I'm refreshing</h2>
+      <ul class="skills-grid">
+        <li class="skill-card">
+          <h3>HTML5</h3>
+          <p>Semantic elements such as header, nav, main, section and footer, with a clear heading structure.</p>
+        </li>
+        <li class="skill-card">
+          <h3>CSS</h3>
+          <p>Flexbox and Grid for layout, plus a media query so the page works on phones and desktops.</p>
+        </li>
+        <li class="skill-card">
+          <h3>JavaScript</h3>
+          <p>Selecting elements, listening for events and updating the page through the DOM.</p>
+        </li>
+        <li class="skill-card">
+          <h3>Developer tools</h3>
+          <p>Resizing the browser, reading the console and fixing the problems I find.</p>
+        </li>
+      </ul>
+    </section>
+
+    <section id="goals" class="section" aria-labelledby="goals-title">
+      <h2 id="goals-title">What I want to get better at</h2>
+      <p>Select a goal to read more about it.</p>
+
+      <div class="goal">
+        <h3>
+          <button class="goal-toggle" type="button" aria-expanded="false" aria-controls="goal-react">
+            Building with React
+          </button>
+        </h3>
+        <p id="goal-react" class="goal-panel" hidden>
+          React is coming up later in this module. I'm keeping this page in plain JavaScript first
+          so I understand what React will be doing for me.
+        </p>
+      </div>
+
+      <div class="goal">
+        <h3>
+          <button class="goal-toggle" type="button" aria-expanded="false" aria-controls="goal-access">
+            Writing accessible pages
+          </button>
+        </h3>
+        <p id="goal-access" class="goal-panel" hidden>
+          Alt text, labels and keyboard access are easy to forget. I want to check them as I go
+          instead of at the end.
+        </p>
+      </div>
+
+      <div class="goal">
+        <h3>
+          <button class="goal-toggle" type="button" aria-expanded="false" aria-controls="goal-testing">
+            Testing earlier
+          </button>
+        </h3>
+        <p id="goal-testing" class="goal-panel" hidden>
+          Opening the developer tools at the start of a task, not the end, should save me time.
+        </p>
+      </div>
+    </section>
+
+    <section id="contact" class="section" aria-labelledby="contact-title">
+      <h2 id="contact-title">Say hello</h2>
+      <p>This is a practice form, so nothing is sent anywhere.</p>
+
+      <form id="contact-form" class="contact-form" novalidate>
+        <div class="field">
+          <label for="name">Name</label>
+          <input id="name" name="name" type="text" autocomplete="name" required>
+        </div>
+        <div class="field">
+          <label for="email">Email</label>
+          <input id="email" name="email" type="email" autocomplete="email" required>
+        </div>
+        <div class="field">
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="4" required></textarea>
+        </div>
+        <button class="button" type="submit">Send message</button>
+        <p id="form-feedback" class="form-feedback" role="status"></p>
+      </form>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>Web Development II refresher by Irinel Talica. Built with HTML5, CSS and JavaScript.</p>
+  </footer>
+</body>
+</html>
